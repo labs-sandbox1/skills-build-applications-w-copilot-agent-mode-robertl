@@ -20,15 +20,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-rb0_(i6pge(4s^cbli_thl2qcv6q0w8qts+h*tvk+w*-+x0dp#'
+SECRET_KEY = 'django-insecure-+3v-2mhn(+f*s*l+)!^f)$!zmo^puwwkdqi*xdgmforv=9e9uf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
+# Allow all hosts
 ALLOWED_HOSTS = ['*']
 
 
 # Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,10 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'octofit_tracker',
     'rest_framework',
+    'djongo',
     'corsheaders',
+    'octofit_tracker',
 ]
+
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -89,6 +94,12 @@ DATABASES = {
     }
 }
 
+# CORS settings
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = ['*']
+CORS_ALLOW_METHODS = ['*']
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -121,12 +132,8 @@ USE_I18N = True
 USE_TZ = True
 
 
-
-# CORS settings
-CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOW_HEADERS = ['*']
-CORS_ALLOW_METHODS = ['*']
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
 
