@@ -15,6 +15,9 @@ class Command(BaseCommand):
         db.activities.delete_many({})
         db.workouts.delete_many({})
         db.leaderboard.delete_many({})
+        
+        # Create unique index on email field for users collection
+        db.users.create_index([("email", 1)], unique=True)
 
         # Create teams
         marvel = Team.objects.create(name='Marvel', description='Marvel Superheroes')
