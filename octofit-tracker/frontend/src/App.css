@@ -1,0 +1,242 @@
+/* OctoFit Tracker Custom Styles */
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-attachment: fixed;
+}
+
+/* Navigation Styles */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+  margin: 0 5px;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+  color: #fff !important;
+}
+
+/* Container Styles */
+.container {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  min-height: calc(100vh - 100px);
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  color: #2d3748;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid #764ba2;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.card-text strong {
+  color: #2d3748;
+  font-weight: 600;
+}
+
+/* Table Styles */
+.table {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.table thead th {
+  border: none;
+  padding: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f7fafc;
+  transform: scale(1.01);
+}
+
+.table tbody td {
+  padding: 15px;
+  vertical-align: middle;
+  color: #4a5568;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(102, 126, 234, 0.05);
+}
+
+/* Button Styles */
+.btn {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(72, 187, 120, 0.4);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #f56565 0%, #e53e3e 100%);
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(245, 101, 101, 0.4);
+}
+
+/* Badge Styles */
+.badge {
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* Loading and Error States */
+.loading-spinner {
+  text-align: center;
+  padding: 50px;
+}
+
+.error-message {
+  background-color: #fed7d7;
+  color: #c53030;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #e53e3e;
+}
+
+.no-data-message {
+  text-align: center;
+  padding: 40px;
+  color: #718096;
+  font-size: 1.1rem;
+}
+
+/* Home Page Styles */
+.home-welcome {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.home-welcome h1 {
+  color: #667eea;
+  margin-bottom: 20px;
+}
+
+.home-welcome p {
+  font-size: 1.2rem;
+  color: #4a5568;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin-top: 10px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
